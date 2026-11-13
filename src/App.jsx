@@ -4,12 +4,9 @@ import MovieList from './components/MovieList/MovieList.jsx';
 import './App.css';
 
 function App() {
-  // 1. Stan movies - początkowo pusta tablica
   const [movies, setMovies] = useState([]);
-  // 5. Osobny stan na wartość inputa
   const [title, setTitle] = useState('');
 
-  // 2. Po pierwszym renderze ustawiamy trzy domyślne filmy
   useEffect(() => {
     setMovies([
       { id: crypto.randomUUID(), title: 'Shrek' },
@@ -18,7 +15,6 @@ function App() {
     ]);
   }, []);
 
-  // 6. Dodanie filmu na koniec listy bez mutowania istniejącej tablicy
   const handleAddMovie = () => {
     const trimmed = title.trim();
     if (trimmed === '') return;
@@ -42,7 +38,6 @@ function App() {
         />
         <button onClick={handleAddMovie}>Dodaj film</button>
       </div>
-      {/* 3. Lista filmów przekazana propsem */}
       <MovieList movies={movies} />
     </>
   );
