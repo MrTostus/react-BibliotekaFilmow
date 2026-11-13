@@ -1,4 +1,4 @@
-// 4. Wyświetlenie filmów jako lista za pomocą .map() z właściwością key
+//Wyświetlenie filmów
 function MovieList({ movies }) {
   return (
     <ul>
