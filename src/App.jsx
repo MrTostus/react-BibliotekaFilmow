@@ -21,7 +21,7 @@ function App() {
 
     setMovies((prevMovies) => [
       ...prevMovies,
-      { id: crypto.randomUUID(), title: trimmed },
+      {title: trimmed },
     ]);
     setTitle('');
   };
