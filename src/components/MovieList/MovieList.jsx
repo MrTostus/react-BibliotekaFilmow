@@ -3,7 +3,7 @@ function MovieList({ movies }) {
   return (
     <ul>
       {movies.map((movie) => (
-        <li key={movie.id}>{movie.title}</li>
+        <li>{movie.title}</li>
       ))}
     </ul>
   );
