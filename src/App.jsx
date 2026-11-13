@@ -9,9 +9,9 @@ function App() {
 
   useEffect(() => {
     setMovies([
-      { id: crypto.randomUUID(), title: 'Shrek' },
-      { id: crypto.randomUUID(), title: 'Król Lew' },
-      { id: crypto.randomUUID(), title: 'Toy Story' },
+      {title: 'Shrek' },
+      {title: 'Król Lew' },
+      {title: 'Toy Story' },
     ]);
   }, []);
 
