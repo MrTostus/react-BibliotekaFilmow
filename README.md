@@ -1,1 +1,1 @@
-<img src="./react-BibliotekaFilmow/cat.gif" alt="cat"/>
+<img src="./cat.gif" alt="cat"/>
